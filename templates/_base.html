@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block titile %}{% endblock titile %}</title>
+    <title>Stylus Photography: {% block title %}{% endblock title %}</title>
 </head>
 <body>
-    <h1>PHOTOGRAPHICA</h1>
+    <h1>Stylus Photography</h1>
     <h3>Ha már unod az egyforma képeket...</h3>
 
     {% include "_menu.html" %}
-
     <hr>
 
     {% block body %}
+        <h1>Empty page</h1>
     {% endblock body %}
 
     <hr>
 
-    <h3>PHOTOGRAPHICA</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto consequatur distinctio dolor facere hic illo impedit itaque, mollitia non nulla obcaecati odio officiis possimus quibusdam reprehenderit repudiandae suscipit temporibus veritatis voluptate. Ab dolor excepturi, facere ipsum laborum libero molestias nisi provident quidem quis, sequi sint suscipit. Iure, nihil ut?</p>
+    {% block footer %}
+        <h3>PHOTOGRAPHICA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi, asperiores culpa delectus, eligendi error hic in laborum nemo neque rerum, sequi tenetur. Esse nam, nostrum officiis repellat sed vel.</p>
+    {% endblock %}
+
+
 </body>
 </html>
