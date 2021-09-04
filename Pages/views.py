@@ -1,17 +1,17 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 
 def home_page(request):
-    return HttpResponse("Stylus Photography: Home")
+    return render(request, "home.html")
 
 
 def contact_page(request):
-    return HttpResponse("Stylus Photography: Contact")
+    return render(request, "contact.html")
 
 
 def about_page(request):
-    return HttpResponse("Stylus Photography: About")
+    return render(request, "about.html")
 
 
 def gallery_page(request):
-    return HttpResponse("Stylus Photography: Gallery")
+    return render(request, "gallery.html")
