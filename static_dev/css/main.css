@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    font-size: 60px;
+}
+
+p{
+    color: blue;
+}
+
+hr{
+    border: 5px solid green;
+}
