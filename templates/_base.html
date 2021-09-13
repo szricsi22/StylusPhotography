@@ -14,23 +14,28 @@
 
 </head>
 <body>
-    <h1>Stylus Photography</h1>
-    <h3>Ha már unod az egyforma képeket...</h3>
+
+    <div class="content-container">
+        <h1>Stylus Photography</h1>
+        <h3>Ha már unod az egyforma képeket...</h3>
+    </div>
 
     {% include "_menu.html" %}
     <hr>
 
-    {% block body %}
-        <h1>Empty page</h1>
-    {% endblock body %}
+    <div class="content-container">
+        {% block body %}
+        {% endblock body %}
+    </div>
 
     <hr>
 
-    {% block footer %}
+    <div class="content-container">
+        {% block footer %}
         <h3>PHOTOGRAPHICA</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi, asperiores culpa delectus, eligendi error hic in laborum nemo neque rerum, sequi tenetur. Esse nam, nostrum officiis repellat sed vel.</p>
-    {% endblock %}
-
+        {% endblock %}
+    </div>
 
 </body>
 </html>
