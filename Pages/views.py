@@ -2,7 +2,11 @@ from django.shortcuts import render
 
 
 def home_page(request):
-    return render(request, "home.html")
+    context = {
+        "page_title": "Stylus Photography",
+        "subtitle": "Ha már unod az egyforma képeket..."
+    }
+    return render(request, "home.html", context)
 
 
 def contact_page(request):
