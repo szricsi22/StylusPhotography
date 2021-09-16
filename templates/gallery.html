@@ -8,9 +8,9 @@
 {% block body %}
     <h1>Gallery</h1>
 
-    <div class="image_container">
+    <div class="image-container">
         {% for photo_data in photos %}
-            <img class="photo_thumbnail" src={{ photo_data.image }} alt="">
+            <img class="photo-thumbnail" src={{ photo_data.image }} alt="">
         {% endfor %}
     </div>
 

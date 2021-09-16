@@ -15,4 +15,4 @@ def about_page(request):
 
 
 def gallery_page(request):
-    return render(request, "gallery.html", {"photos": create_photo_list(10)})
+    return render(request, "gallery.html", {"photos": create_photo_list(12)})
