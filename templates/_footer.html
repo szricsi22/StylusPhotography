@@ -6,24 +6,29 @@
             {% block footer %}
 
                 <div>
-                    <h3>STYLUS PHOTOGRAPHY</h3>
+                    <h3>{{ page_title | upper }}</h3>
                 </div>
 
                 <div>
-                    <p>Cím</p>
+                    <small>Cím</small>
                     <p>Visual Workshop Bt.bt <br>Budapest, Hungary</p>
                 </div>
 
                 <div>
-                    <p>Elérhetőségek</p>
-                    <p>szmatefy@gmail.com</p>
-                    <p>+36-70-3696077</p>
+                    <small>Elérhetőségek</small>
+                    <p>{{ email }}</p>
+                    <p>{{ phone }}</p>
                 </div>
 
                 <div>
-                    <p>Kövess!</p>
-                    <p>Instagram icon..</p>
-                    <p>Facebook icon..</p>
+                    <small>Kövess!</small>
+                    <div>
+                        <a href={{ instagram }}><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <div>
+                        <a href={{ facebook }}><i class="fab fa-facebook-square"></i></a>
+                    </div>
                 </div>
 
             {% endblock %}
