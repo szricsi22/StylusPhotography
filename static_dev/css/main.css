@@ -16,3 +16,8 @@ body{
     max-width: 800px;
     margin: 0 auto;
 }
+
+i{
+    font-size: 30px;
+    margin: 5px;
+}
