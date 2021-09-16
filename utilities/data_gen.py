@@ -3,7 +3,7 @@ def create_photo_list(number):
 
     for i in range(number):
         photo_list.append({
-            "title": "Photo Title",
+            "title": f"Photo Title{i}",
             "date": "20 09 12",
             "image": f"https://source.unsplash.com/500x500/?nature,waterf{i}"
         })

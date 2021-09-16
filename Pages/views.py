@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from utilities.data_gen import create_photo_list
 
 
 def home_page(request):
@@ -14,4 +15,4 @@ def about_page(request):
 
 
 def gallery_page(request):
-    return render(request, "gallery.html")
+    return render(request, "gallery.html", {"photos": create_photo_list(10)})

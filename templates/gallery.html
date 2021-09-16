@@ -7,7 +7,11 @@
 
 {% block body %}
     <h1>Gallery</h1>
-    <img src="https://source.unsplash.com/500x500/?nature,water1" alt="">
-    <img src="https://source.unsplash.com/500x500/?nature,water2" alt="">
-    <img src="https://source.unsplash.com/500x500/?nature,water3" alt="">
+
+    <div class="image_container">
+        {% for photo_data in photos %}
+            <img class="photo_thumbnail" src={{ photo_data.image }} alt="">
+        {% endfor %}
+    </div>
+
 {% endblock body %}
