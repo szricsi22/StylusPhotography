@@ -38,5 +38,6 @@ button{
 
 button:hover{
     background-color: #393f44;
+    transition: background-color 0.5s;
     color: white;
 }
