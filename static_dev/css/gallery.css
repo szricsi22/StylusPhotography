@@ -1,3 +1,9 @@
+.gallery-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 150px;
+}
+
 .image-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -7,4 +13,21 @@
 .photo-thumbnail{
     width: 100%;
     border-radius: 20px;
+}
+
+.gallery-container .menu-container{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.menu-container h3{
+    cursor: pointer;
+
+}
+
+.menu-container h3:hover{
+    color: #00d2da
 }
