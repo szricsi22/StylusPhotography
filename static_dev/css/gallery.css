@@ -18,7 +18,7 @@
 .gallery-container .menu-container{
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
 }
