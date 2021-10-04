@@ -1,6 +1,6 @@
 .menu-container{
     background-color: #393f44;
-    padding: 15px;
+    padding: 12px;
     margin-bottom: 20px;
     position: sticky;
     top: 0;
@@ -9,5 +9,10 @@
 .menu-link{
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 12px;
+}
+
+.menu-link.active{
+    background-color: white;
+    color: #393f44;
 }
