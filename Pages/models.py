@@ -10,3 +10,6 @@ class PageInfo(models.Model):
 
     facebook = models.URLField(max_length=200, blank=True)
     instagram = models.URLField(max_length=200, blank=True)
+
+    def __str__(self):
+        return f"{self.title}: {self.subtitle}"
