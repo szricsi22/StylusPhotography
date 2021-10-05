@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class MyPage(models.Model):
+class PageInfo(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
