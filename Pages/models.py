@@ -13,3 +13,21 @@ class PageInfo(models.Model):
 
     def __str__(self):
         return f"{self.title}: {self.subtitle}"
+
+
+class HomePage(models.Model):
+    title = models.CharField(max_length=200, blank=True)
+    subtitle = models.CharField(max_length=200, blank=True)
+    content = models.TextField(max_length=2000, blank=True)
+
+    def __str__(self):
+        return self.title
+
+
+class AboutPage(models.Model):
+    title = models.CharField(max_length=200, blank=True)
+    subtitle = models.CharField(max_length=200, blank=True)
+    content = models.TextField(max_length=2000, blank=True)
+
+    def __str__(self):
+        return self.title
