@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 
-from .models import HomePage
+from .models import HomePage, AboutPage
 
 
 class HomeView(TemplateView):
@@ -29,4 +29,11 @@ class AboutView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(AboutView, self).get_context_data(**kwargs)
 
+        about_data_list = AboutPage.objects.all()
+        if not about_data_list:
+            return context
+
+        context["data"] = about_data_list[0]
+
         return context
+
