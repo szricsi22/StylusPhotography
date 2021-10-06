@@ -1,6 +1,7 @@
+import os
 from django.db import models
 from django.utils.text import slugify
-from django.db.models.signals import pre_save
+from django.db.models.signals import pre_save, post_delete
 
 
 class Category(models.Model):
@@ -39,3 +40,10 @@ def slug_generator(sender, instance, **kwargs):
 
 pre_save.connect(slug_generator, sender=Photo)
 
+
+def image_cleanup(sender, instance, **kwargs):
+    if os.path.exists(instance.image.path):
+        os.remove(instance.image.path)
+
+
+post_delete.connect(image_cleanup, sender=Photo)
