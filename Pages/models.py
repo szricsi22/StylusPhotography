@@ -14,6 +14,9 @@ class PageInfo(models.Model):
     def __str__(self):
         return f"{self.title}: {self.subtitle}"
 
+    class Meta:
+        verbose_name_plural = "Oldal infó"
+
 
 class HomePage(models.Model):
     title = models.CharField(max_length=200, blank=True)
@@ -23,6 +26,9 @@ class HomePage(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name_plural = "Home Page infó"
+
 
 class AboutPage(models.Model):
     title = models.CharField(max_length=200, blank=True)
@@ -31,3 +37,6 @@ class AboutPage(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name_plural = "About Page infó"
