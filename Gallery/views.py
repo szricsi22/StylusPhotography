@@ -2,7 +2,7 @@ from django.views.generic import TemplateView, DetailView
 
 from utilities.data_gen import create_photo_list
 
-from .models import Category
+from .models import Category, Photo
 
 
 class GalleryView(TemplateView):
@@ -10,7 +10,7 @@ class GalleryView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(GalleryView, self).get_context_data(**kwargs)
-        context["photos"] = create_photo_list(18)
+        context["photos"] = Photo.objects.all()
         context["categories"] = Category.objects.all()
         return context
 

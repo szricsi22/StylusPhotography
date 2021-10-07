@@ -9,8 +9,8 @@
 
     <div class="gallery-container">
         <div class="image-container">
-            {% for photo_data in photos %}
-                <a href="/gallery/photo-details"><img class="photo-thumbnail" src={{ photo_data.image }} alt=""></a>
+            {% for photo in photos %}
+                <a href="/gallery/{{ photo.slug }}"><img class="photo-thumbnail" src={{ photo.image.url }} alt=""></a>
             {% endfor %}
         </div>
 
