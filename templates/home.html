@@ -6,11 +6,13 @@
 
 {% block body %}
 
-    <h1>{{ data.title }}</h1>
-    <h3>{{ data.subtitle }}</h3>
-    <hr>
+    <h1 class="title">{{ data.title }}</h1>
+    <h3 class="subtitle">{{ data.subtitle }}</h3>
+
+    <div class="photo-container">
+        <img src="{{ photo.image.url }}" alt="">
+    </div>
+
     <p>{{ data.content }}</p>
-    <hr>
-    <img src="{{ photo.image.url }}" alt="">
 
 {% endblock body %}
