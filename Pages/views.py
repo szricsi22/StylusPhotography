@@ -1,6 +1,9 @@
 from django.views.generic import TemplateView
 
 from .models import HomePage, AboutPage
+from Gallery.models import Photo
+
+import random
 
 
 class HomeView(TemplateView):
@@ -15,7 +18,11 @@ class HomeView(TemplateView):
             return context
 
         context["data"] = model_data_list[0]
-        context["photo"] = "https://source.unsplash.com/500x500/?nature,water"
+
+        frontpage_photo_list = Photo.objects.filter(frontpage=True)
+        if frontpage_photo_list:
+            context["photo"] = random.choice(frontpage_photo_list)
+
         return context
 
 
