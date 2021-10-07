@@ -4,14 +4,14 @@
 
 {% block body %}
     <div class="details-container">
-        <img src="https://source.unsplash.com/1200x900/?nature,waterf" alt="">
+        <img src={{ photo.image.url }} alt="">
 
         <div>
             <div class="photo-description-container">
-                <h1>Photo Title</h1>
-                <small>2020 09 12</small>
+                <h1>{{ photo.title }}</h1>
+                <small>{{ photo.uploaded }}</small>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem blanditiis consequatur cupiditate doloremque doloribus ea eius eos eum fugit in ipsum magnam obcaecati officiis repudiandae saepe sunt ut, vero!</p>
+                <p>{{ photo.description }}</p>
             </div>
         </div>
     </div>
