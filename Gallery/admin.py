@@ -6,7 +6,7 @@ admin.site.register(Category)
 
 
 class PhotoModelAdmin(admin.ModelAdmin):
-    list_display = ["title", "category", "frontpage", "image"]
+    list_display = ["title", "category", "frontpage", "slug", "image"]
     list_editable = ["frontpage"]
     list_filter = ["category"]
     search_fields = ["title"]
