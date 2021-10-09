@@ -31,3 +31,7 @@
 .category-menu h3:hover{
     color: #00d2da
 }
+
+.category-menu.active{
+    color: #00d2da
+}
