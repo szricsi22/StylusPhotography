@@ -1,7 +1,8 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
 
 from .models import HomePage, AboutPage
 from Gallery.models import Photo
+from .forms import ContactForm
 
 import random
 
@@ -26,8 +27,9 @@ class HomeView(TemplateView):
         return context
 
 
-class ContactView(TemplateView):
+class ContactView(FormView):
     template_name = "contact.html"
+    form_class = ContactForm
 
 
 class AboutView(TemplateView):

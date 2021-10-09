@@ -8,10 +8,7 @@
     <form method="post" class="contact-form">
         {% csrf_token %}
 
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-
+        {{ form }}
 
         <button>Send</button>
     </form>
