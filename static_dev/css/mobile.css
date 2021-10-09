@@ -21,6 +21,19 @@
     padding: 5px;
   }
 
+  .contact-form{
+    padding: 5px;
+  }
+
+  .gallery-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-menu{
+    display: none;
+  }
+
 }
 
 /* Tablet Styles */
@@ -33,6 +46,11 @@
     margin: 10px!important;
   }
 
+  .gallery-container{
+    display: flex;
+    flex-direction: column;
+  }
+
   .content-container{
     margin: 10px;
   }
@@ -42,6 +60,10 @@
     flex-direction: column;
   }
 
+  .desktop-menu{
+    display: none;
+  }
+
 }
 
 /* Desktop Styles */
@@ -49,4 +71,9 @@
   body {
     background-color: #B2D6FF; /* Blue */
   }
+
+  .mobil-menu{
+    display: none;
+  }
+
 }
