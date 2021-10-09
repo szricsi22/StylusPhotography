@@ -22,15 +22,12 @@
     top: 0;
 }
 
-.menu-container h3{
+.category-menu{
     cursor: pointer;
     color: black;
-}
-
-.menu-container a{
     text-decoration: none;
 }
 
-.menu-container h3:hover{
+.category-menu h3:hover{
     color: #00d2da
 }
