@@ -30,6 +30,22 @@ class HomeView(TemplateView):
 class ContactView(FormView):
     template_name = "contact.html"
     form_class = ContactForm
+    success_url = "/contact/sent/"
+
+    def form_valid(self, form):
+        name = form.data["name"]
+        email = form.data["email"]
+        message = form.data["message"]
+
+        print("Name:", name),
+        print("Email:", email),
+        print("Message:", message)
+
+        return super(ContactView, self).form_valid(form)
+
+
+class ContactSentView(TemplateView):
+    template_name = "email_sent.html"
 
 
 class AboutView(TemplateView):
