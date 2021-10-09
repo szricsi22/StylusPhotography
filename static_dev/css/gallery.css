@@ -13,6 +13,9 @@
 .photo-thumbnail{
     width: 100%;
     height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 20px;
 }
 
