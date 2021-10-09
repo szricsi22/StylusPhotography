@@ -1,0 +1,52 @@
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+
+  .header-container{
+    text-align: center;
+  }
+
+  .content-container{
+    margin: 10px;
+  }
+
+  .footer-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container{
+    padding: 5px;
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+
+  .header-container{
+    margin: 10px!important;
+  }
+
+  .content-container{
+    margin: 10px;
+  }
+
+  .footer-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
