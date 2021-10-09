@@ -25,7 +25,11 @@
 
 .menu-container h3{
     cursor: pointer;
+    color: black;
+}
 
+.menu-container a{
+    text-decoration: none;
 }
 
 .menu-container h3:hover{
