@@ -10,7 +10,9 @@
     <div class="gallery-container">
         <div class="image-container">
             {% for photo in photos %}
-                <a href="/gallery/{{ photo.slug }}"><img class="photo-thumbnail" src={{ photo.image.url }} alt=""></a>
+                <a href="/gallery/{{ photo.slug }}">
+                    <div class="photo-thumbnail" style="background-image: url({{ photo.image.url }})"></div>
+                </a>
             {% endfor %}
         </div>
 
