@@ -8,6 +8,14 @@
     text-align: center;
   }
 
+  .mobile-menu-button{
+    display: inherit;
+  }
+
+  .menu-container .content-container{
+    display: none;
+  }
+
   .details-container{
     display: flex;
     flex-direction: column;
