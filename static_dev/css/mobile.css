@@ -8,6 +8,11 @@
     text-align: center;
   }
 
+  .details-container{
+    display: flex;
+    flex-direction: column;
+  }
+
   .category-menu{
     position: sticky;
     top: 60px;
@@ -54,6 +59,11 @@
 
   .header-container{
     margin: 10px!important;
+  }
+
+  .details-container{
+    display: flex;
+    flex-direction: column;
   }
 
   .category-menu{
