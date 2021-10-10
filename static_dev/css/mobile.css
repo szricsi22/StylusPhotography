@@ -1,5 +1,5 @@
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   #nav-menu{
     flex-direction: column;
     margin: 0;
@@ -61,7 +61,7 @@
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 421px) and (max-width: 960px) {
 
   .details-container{
     display: flex;
