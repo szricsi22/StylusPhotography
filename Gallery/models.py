@@ -1,8 +1,8 @@
-import os, time
 from django.db import models
 from django.utils.text import slugify
 from django.db.models.signals import pre_save, post_delete
 from PIL import Image
+import os, time, shutil
 
 
 class Category(models.Model):
@@ -31,10 +31,12 @@ class Photo(models.Model):
     uploaded = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
+        # before save...
         self.replace_image()
 
         super(Photo, self).save(*args, **kwargs)
 
+        # after save
         self.resize_image()
 
     def resize_image(self):
@@ -74,7 +76,13 @@ pre_save.connect(slug_generator, sender=Photo)
 
 def image_cleanup(sender, instance, **kwargs):
     if os.path.exists(instance.image.path):
+
+        image_folder = os.path.dirname(instance.image.path)
+
         os.remove(instance.image.path)
+
+        if not os.listdir(image_folder):
+            shutil.rmtree(image_folder, ignore_errors=True)
 
 
 post_delete.connect(image_cleanup, sender=Photo)
