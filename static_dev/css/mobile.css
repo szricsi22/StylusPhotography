@@ -1,11 +1,8 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
-
-  .header-container{
-    text-align: center;
+  #nav-menu{
+    flex-direction: column;
+    margin: 0;
   }
 
   .mobile-menu-button{
@@ -23,7 +20,7 @@
 
   .category-menu{
     position: sticky;
-    top: 60px;
+    top: 54px;
     order: -1;
   }
 
@@ -38,6 +35,10 @@
 
   .content-container{
     margin: 10px;
+  }
+
+  .header-container{
+    text-align: center;
   }
 
   .footer-grid{
@@ -61,13 +62,6 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
-
-  .header-container{
-    margin: 10px!important;
-  }
 
   .details-container{
     display: flex;
@@ -76,7 +70,7 @@
 
   .category-menu{
     position: sticky;
-    top: 60px;
+    top: 64px;
     order: -1;
   }
 
@@ -89,16 +83,20 @@
     margin: 0 5px;
   }
 
-  .gallery-container{
-    display: flex;
-    flex-direction: column;
-  }
-
   .content-container{
     margin: 10px;
   }
 
+  .header-container{
+    margin: 10px!important;
+  }
+
   .footer-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-container{
     display: flex;
     flex-direction: column;
   }
@@ -106,7 +104,4 @@
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
 }
