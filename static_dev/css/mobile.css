@@ -8,6 +8,20 @@
     text-align: center;
   }
 
+  .mobil-menu{
+    position: sticky;
+    top: 60px
+  }
+
+  .mobil-menu .menu-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobil-menu .menu-container h3{
+    margin: 0 5px;
+  }
+
   .content-container{
     margin: 10px;
   }
@@ -44,6 +58,20 @@
 
   .header-container{
     margin: 10px!important;
+  }
+
+  .mobil-menu{
+    position: sticky;
+    top: 60px
+  }
+
+  .mobil-menu .menu-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobil-menu .menu-container h3{
+    margin: 0 5px;
   }
 
   .gallery-container{
