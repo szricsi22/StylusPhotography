@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: auto 200px;
     grid-gap: 10px;
-    position: sticky;
-    top: 54px;
 }
 
 .details-container img{
