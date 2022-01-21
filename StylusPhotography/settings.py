@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import getpass
 from pathlib import Path
 from dotenv import load_dotenv
 import os
@@ -26,7 +27,8 @@ load_dotenv(dotenv_path=BASE_DIR / ".env")
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+
+DEBUG = True if getpass.getuser() == "szaboricsi" else False
 
 ALLOWED_HOSTS = ['szricsi22.pythonanywhere.com', '127.0.0.1']
 
