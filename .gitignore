@@ -1,7 +1,0 @@
-/.DS_store/
-/.idea/
-/venv/
-/media/
-
-.env
-db.sqlite3
