@@ -1,0 +1,10 @@
+.details-container{
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-gap: 10px;
+}
+
+.details-container img{
+    width: 100%;
+    border-radius: 10px;
+}

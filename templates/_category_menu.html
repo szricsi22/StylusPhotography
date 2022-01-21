@@ -1,0 +1,5 @@
+<div class="menu-container">
+    {% for category in categories %}
+        <a href="/gallery/?category={{ category.title }}" class="category-menu {% if request.GET.category == category.title %}active{% endif %}"><h3>{{ category.title }}</h3></a>
+    {% endfor %}
+</div>

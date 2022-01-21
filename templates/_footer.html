@@ -1,0 +1,40 @@
+<div class="footer-container">
+
+    <div class="content-container">
+
+        <div class="footer-grid">
+            {% block footer %}
+
+                <div>
+                    <h3>{{ page_title | upper }}</h3>
+                </div>
+
+                <div>
+                    <small>Cím</small>
+                    <hr>
+                    <p>{{ address }}</p>
+                </div>
+
+                <div>
+                    <small>Elérhetőségek</small>
+                    <hr>
+                    <p>{{ email }}</p>
+                    <p>{{ phone }}</p>
+                </div>
+
+                <div>
+                    <small>Kövess!</small>
+                    <hr>
+                    <div>
+                        <a href={{ instagram }}><i class="fab fa-instagram footer-icon"></i></a>
+                        <a href={{ facebook }}><i class="fab fa-facebook-square footer-icon"></i></a>
+                    </div>
+                </div>
+
+            {% endblock %}
+
+        </div>
+
+    </div>
+
+</div>
