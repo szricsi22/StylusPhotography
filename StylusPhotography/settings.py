@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True if getpass.getuser() == "szaboricsi" else False
 
 ALLOWED_HOSTS = ['szricsi22.pythonanywhere.com', '127.0.0.1']
 
